@@ -1,3 +1,4 @@
+require 'pry'
 require_relative 'spec_helper'
 require_relative '../lib/my_find.rb'
 
@@ -10,6 +11,7 @@ describe "#my_find" do
 
   it "can handle an empty collection" do
     counter=0
+    #binding.pry
     my_find([]) do |x|
       counter+=1
     end
